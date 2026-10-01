@@ -1,0 +1,30 @@
+[package]
+name = "buyproxy"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Official BuyProxy Rust SDK — generate residential, mobile, ISP and datacenter proxies, manage reseller customers and top up bandwidth. Async, fully typed."
+license = "MIT"
+readme = "README.md"
+homepage = "https://www.buyproxy.org"
+documentation = "https://docs.rs/buyproxy"
+repository = "https://github.com/DishantSinghDev2/buyproxy-rust"
+keywords = ["proxy", "proxies", "scraping", "sdk", "buyproxy"]
+categories = ["api-bindings", "web-programming::http-client", "network-programming"]
+exclude = [".github/*", "CONTRIBUTING.md", "SECURITY.md"]
+
+[dependencies]
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+tokio = { version = "1", features = ["time"] }
+percent-encoding = "2"
+url = "2"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "time"] }
+wiremock = "0.6"
+
+[package.metadata.docs.rs]
+all-features = true

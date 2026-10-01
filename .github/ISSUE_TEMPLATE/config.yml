@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: BuyProxy support
+    url: https://www.buyproxy.org/contact
+    about: Billing, account and proxy-quality questions go to support, not GitHub issues.
+  - name: API reference
+    url: https://www.buyproxy.org/docs/api-reference/introduction
+    about: Endpoint and parameter documentation.

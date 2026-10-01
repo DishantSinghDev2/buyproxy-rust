@@ -1,0 +1,23 @@
+name: Bug report
+description: Something in the BuyProxy SDK isn't working as documented
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you expect, and what did you get instead?
+    validations: { required: true }
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: A short snippet. **Remove API keys and proxy credentials.**
+      render: shell
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes:
+      label: SDK version and runtime
+      placeholder: e.g. 1.0.0 on Node 22 / Python 3.12 / Go 1.24
+    validations: { required: true }
